@@ -1,215 +1,393 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="" />
-    <meta name="author"content="" />
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./libs/css/all.min.css">
-    <link rel="stylesheet" href="./css/swiper.css">
-    <link rel="stylesheet" href="./css/index.css" id="stylesheet">
-    <title>Shop More</title>
-</head>
-<body>
-    <header class="header-nav">
-        <a href="" class="default">
-            <img src="./img/logo.png" alt="Shop More" class="header-logo-img">
-        </a>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <link rel="stylesheet" href="./css/index.css" id="stylesheet" />
+        <title>Shop More</title>
+    </head>
+    <body>
+        <header class="header-nav">
+            <a href="" class="default">
+                <img
+                    src="./img/logo.png"
+                    alt="Shop More"
+                    class="header-logo-img"
+                />
+            </a>
+        </header>
 
-    <nav class="nav-bar flex s-b false">
-
-        <ul class="socials flex default">
-            <li><a href="" class="default fab fa-instagram"></a></li>
-            <li><a href="" class="default fab fa-facebook"></a></li>
-            <li><a href="" class="default fab fa-twitter"></a></li>
-        </ul>
-        
-        <ul class="nav-links default flex s-a">
-            <li><a href="" class="default">Home</a></li>
-            <li><a href="" class="default">About</a></li>
-            <li><a href="" class="default">Shop</a></li>
+        <nav class="nav-bar flex s-b false">
             <ul class="socials flex default">
                 <li><a href="" class="default fab fa-instagram"></a></li>
                 <li><a href="" class="default fab fa-facebook"></a></li>
                 <li><a href="" class="default fab fa-twitter"></a></li>
             </ul>
-        </ul>
 
-        <div class="drk">
-            <span class="fa fa-adjust"></span>
-            <span class="info"> Dark Mode</span>
-        </div>
+            <ul class="nav-links default flex s-a">
+                <li><a href="" class="default">Home</a></li>
+                <li><a href="" class="default">About</a></li>
+                <li><a href="" class="default">Shop</a></li>
+                <ul class="socials flex default">
+                    <li><a href="" class="default fab fa-instagram"></a></li>
+                    <li><a href="" class="default fab fa-facebook"></a></li>
+                    <li><a href="" class="default fab fa-twitter"></a></li>
+                </ul>
+            </ul>
 
-        <div class="hamburger">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-        </div>
-    </nav>
+            <div class="drk">
+                <span class="fa fa-adjust"></span>
+                <span class="info"> Dark Mode</span>
+            </div>
 
-    <section class="banner intro-head flex column s-a ">
-        <div class="centered-content">
-          <div class="flex column">
-           <a href="" class="default flex column">
-            <img src="./img/shoping.png" width="200">
-            <img src="./img/logo invert.png" alt="Shop More" width="300">
-           </a>
-          </div>
-            <form action="" class="search flex">
-                <div class="filter">
-                    <select name="goods" id="filter-search">
-                        <option value="all">All</option>
-                        <option value="all">Clothing</option>
-                        <option value="all">Shoes</option>
-                        <option value="all">Electronics</option>
-                    </select>
+            <div class="hamburger">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+
+        <section id="home" class="banner intro-head flex column s-a">
+            <div class="centered-content">
+                <div class="flex column">
+                    <a href="" class="default flex column">
+                        <img src="./img/shoping.png" width="200" />
+                        <img
+                            src="./img/logo invert.png"
+                            alt="Shop More"
+                            width="300"
+                        />
+                    </a>
                 </div>
-                <div class="search-input">
-                    <input type="search" class="search-query" placeholder="Search and hit Enter">
+                <form action="" class="search flex">
+                    <div class="filter">
+                        <select name="goods" id="filter-search">
+                            <option value="all">All</option>
+                            <option value="all">Clothing</option>
+                            <option value="all">Shoes</option>
+                            <option value="all">Electronics</option>
+                        </select>
+                    </div>
+                    <div class="search-input">
+                        <input
+                            type="search"
+                            class="search-query"
+                            placeholder="Search and hit Enter"
+                        />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="items">
+            <div class="most-bought-items">
+                <div class="tt">
+                    <h2 class="title">Most Bought Items</h2>
+                    <p class="sub-title">
+                        Shop from the popular categories from established brands
+                    </p>
                 </div>
-            </form>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item" focusable="true">
+                            <div class="tag">Accessories</div>
+                            <img src="./img/img1.png" alt="" />
+                            <div
+                                class="swiper-lazy-preloader swiper-lazy-preloader-black"
+                            ></div>
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="flex s-b" style="margin: 10px 0;">
+                                <div style="transform: translateX(-70%);">
+                                    <div class="price">
+                                        $30.30
+                                    </div>
+                                    <div class="older-price">
+                                        $40.556
+                                    </div>
+                                </div>
+                                <div
+                                    class="like"
+                                    style="transform: translateX(100%);"
+                                >
+                                    <span class="fa fa-heart"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="" class="default">
+                                <img src="./img/img2.png" alt="" />
+                                <div class="item-name">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing.
+                                </div>
+                                <div class="price">
+                                    $30.30
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img3.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img4.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img5.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img6.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img7.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <img src="./img/img8.png" alt="" />
+                            <div class="item-name">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing.
+                            </div>
+                            <div class="price">
+                                $30.30
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <br />
+                    <br />
+                    <br />
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Initialize Swiper -->
+            </div>
+
+            <div class="new-items">
+                <div class="tt">
+                    <h2 class="title">New Items</h2>
+                    <p class="sub-title">
+                        Shop our latest new arrivals from established brands
+                    </p>
+                </div>
+            </div>
+            <div class="new-items-container">
+                <div class="item">
+                    <div class="tag">Accessories</div>
+                    <img src="./img/img3.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/img7.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/img6.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/img5.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="tag">Accessories</div>
+                    <img src="./img/img4.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="tag">Accessories</div>
+                    <img src="./img/img3.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="tag">Accessories</div>
+                    <img src="./img/img2.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="tag">Accessories</div>
+                    <img src="./img/img1.png" alt="" />
+                    <div class="item-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </div>
+                    <div class="price">
+                        $30.30
+                    </div>
+                </div>
+            </div>
+            <div class="flex s-b">
+                <button class="see-more-btn">EXPLORE MORE ITEMS</button>
+            </div>
+
+            <div class="collections">
+                <!-- <div class="collection-wrapper"> -->
+                <div class="collection">
+                    <div>
+                        <h3>Find The Best Collection Around The World</h3>
+                        <button>EXPLORE</button>
+                    </div>
+                </div>
+                <div class="collection">
+                    <div>
+                        <h3>Awesome T-Shirts, Crop Tops, Shoes Top And More</h3>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="collection-pagination"></div>
+        </section>
+        <!-- ---------- -->
+
+        <footer class="">
+            <div class="flex s-b wrap footer">
+                <div class="footer-about">
+                    <img src="./img/logo invert.png" width="150px" />
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-payment">
+                    <h5>Payment</h5>
+                    <ul>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Visa</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-search footer-form">
+                    <h5>Newsletter</h5>
+                    <p>
+                        Subscribe to our news letter to get notified with latest
+                    </p>
+                    <form>
+                        <span>
+                            <input
+                                type="email"
+                                id="footer-newsletter"
+                                placeholder="Enter Email"
+                            />
+                            <button id="footer-submit-newsletter" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </span>
+                    </form>
+                    <div class="footer-social-icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- <p id="year"> ©Copyright</p> -->
+
+            <div class="bottom-footer">
+                <!-- <h4>Contributors</h4> -->
+                <ul class="flex wrap s-a">
+                    <li>
+                        <img src="./img/logo1.png" width="100" alt="" />
+                        <img src="./img/logo2.png" width="100" alt="" />
+                        <img src="./img/logo3.png" width="100" alt="" />
+                    </li>
+                </ul>
+                <p style="margin: 0 auto;">
+                    &copy; Shop More - All Right Resevered <span></span>
+                </p>
+            </div>
+        </footer>
+
+        <div focusable="true" class="back-top-top-btn">
+            <a href="#home" class="fa fa-arrow-up"> </a>
         </div>
-    </section>
 
-    <section class="items">
-
-        <div class="most-bought-items">
-<h2 class="title">Most Bought Items</h2>
- <!-- Swiper -->
- <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide item" focusable="true">
-        <div class="tag">Accessories</div>
-<img src="./img/img1.png" alt="">
-<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
-<div class="item-name">
-  Lorem ipsum dolor sit amet consectetur adipisicing.
-</div>
-<div class="flex s-b" style="margin: 10px 0">
-<div style="transform: translateX(-70%)">
-    <div class="price">
-      $30.30
-    </div>
-    <div class="older-price">
-      $40.556
-    </div>
-  </div>
-  <div class="like" style="transform: translateX(100%)">
-    <span class="fa fa-heart"></span>
-  </div>
-</div>
-      </div>
-      <div class="swiper-slide item">
-        <a href="" class="default">
-          <img src="./img/img2.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-          <div class="price">
-            $30.30
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide item">
-          <img src="./img/img3.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-      <div class="swiper-slide item">
-          <img src="./img/img4.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-      <div class="swiper-slide item">
-          <img src="./img/img5.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-      <div class="swiper-slide item">
-          <img src="./img/img6.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-      <div class="swiper-slide item"><img src="./img/img7.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-      <div class="swiper-slide item"><img src="./img/img8.png" alt="">
-          <div class="item-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-           <div class="price">
-            $30.30
-          </div>
-      </div>
-    </div>
-    <!-- Add Pagination -->
-    <br />
-    <br />
-    <br />
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-
-  <!-- Initialize Swiper -->
- 
-        </div>
-
-        <div class="new-items">
-<h2 class="title">New Items</h2>
-        </div>
-<div class="new-items-container">
-
-</div>
-    </section>
-
-    <footer class="footer">
-
-    </footer>
-<!-- error messgae -->
-<!-- <div class="error-msg">
-  <div class="error-bg">
-    <div>
-      <span class="fa fa-cogs"></span>
-      <p>We are very sorry, 
-        this website is still under construction
-      </p>
-      <button>GOT It</button>
-    </div>
-  </div>
-</div> -->
-
-
-
-  <!-- Swiper JS -->
-  <script src="./js/swiper.js"></script>
-    <script src="./js/index.js" defer> </script>
-</body>
+        <!-- Swiper JS -->
+        <script src="./js/swiper.js"></script>
+        <script src="./js/smooth-scroll.min.js"></script>
+        <script src="./js/index.js" defer></script>
+    </body>
 </html>
